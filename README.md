@@ -325,6 +325,31 @@ ref: https://docs.astral.sh/uv/getting-started/installation/#uninstallation
 
 ---
 
+## AGENTS.md
+
+
+- Follow project-defined tooling first.
+- For Python work, use `uv` for execution and package management, `ruff` for formatting and linting, and `ty` for type checking.
+
+ref: https://github.com/narumiruna/dotfiles/blob/main/codex/.codex/AGENTS.md
+
+
+---
+
+## pre-commit config
+
+```yaml
+repos:
+  - repo: https://github.com/astral-sh/uv-pre-commit
+    rev: 0.11.7
+    hooks:
+      - id: uv-lock
+```
+
+ref: https://github.com/astral-sh/uv-pre-commit
+
+---
+
 ## References
 
 - [Astral](https://astral.sh/)
